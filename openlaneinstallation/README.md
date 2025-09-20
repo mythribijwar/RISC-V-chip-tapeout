@@ -18,7 +18,7 @@ Update your package list:
 
 2..DOCKER SETUP
 
-Installing Docker
+Installing Docker:
 
 Purpose: Docker provides containerized environment for OpenLane tools.
 
@@ -35,25 +35,30 @@ Purpose: Docker provides containerized environment for OpenLane tools.
     $(. /etc/os-release && echo \"$VERSION_CODENAME\") stable" | \
     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     sudo apt-get update
-Install Docker Engine
+Install Docker Engine:
 
     sudo apt-get install docker-ce docker-ce-cli containerd.ioVerify Installation
 
-Add Your User to the Docker Group
+Add Your User to the Docker Group:
 
     sudo groupadd docker
     sudo usermod -aG docker $USER
     sudo reboot
     
-Run the test image
+Run the test image:
 
   after reboot
 
      sudo docker run hello-world
+     
+verification
+  
+  ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/1ba934ca8e834eeb9d61fc85a76c6df9fb7a7ce9/Screenshot%20From%202025-09-20%2021-35-48.png)
+  
 
 3..OPENLANE SETUP
 
-Verify Prerequisites
+Verify Prerequisites:
 
     git --version
     docker --version
@@ -62,13 +67,13 @@ Verify Prerequisites
     make --version
     python3 -m venv -h
 
-Update & Install Required Packages
+Update & Install Required Packages:
 
      sudo apt-get update
      sudo apt-get upgrade
     sudo apt install -y build-essential python3 python3-venv python3-pip python3-tk curl make git
     
-Clone and Build OpenLane
+Clone and Build OpenLane:
 
     cd $HOME
     git clone https://github.com/The-OpenROAD-Project/OpenLane
