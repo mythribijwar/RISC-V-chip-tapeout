@@ -1,3 +1,14 @@
+System and Virtual Machine Configuration
+I configured a Virtual Machine (VM) with the following specifications:
+
+
+ Operating SystemM :	Ubuntu 20.04+
+ 
+  RAM :	6GB
+  
+  Storage :	50GB HDD
+  
+  vCPUs :	4
 1.Yosys – RTL Synthesis Tool
 
 Purpose: Converts RTL code into gate-level representations.
