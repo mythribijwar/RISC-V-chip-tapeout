@@ -1,4 +1,5 @@
 1.Yosys – RTL Synthesis Tool
+
 Purpose: Converts RTL code into gate-level representations.
 
 Installation steps
@@ -16,7 +17,10 @@ Installation steps
     
 Installation Verification 
 
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/817fafa14027075e23581ce5d335aa7e5145b07b/week0/verification%20pic/yosys.png)
+
 2.Iverilog – Verilog Simulator
+
 Purpose: Compiles and simulates Verilog designs for functional verification.
 
 Installation steps
@@ -25,7 +29,10 @@ Installation steps
 
 Installation Verification 
 
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/817fafa14027075e23581ce5d335aa7e5145b07b/week0/verification%20pic/iverilog.png)
+
 3.GTKWave – Waveform Viewer
+
 Purpose: Analyzes and visualizes simulation waveforms for debugging.
 
 Installation steps
@@ -33,14 +40,25 @@ Installation steps
     $ sudo apt update
     $ sudo apt install gtkwave
 
+Installation Verification 
+
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/817fafa14027075e23581ce5d335aa7e5145b07b/week0/verification%20pic/gtkwave.png)
+
 4.Ngspice – Circuit Simulator
+
 Purpose: Performs analog and mixed-signal circuit simulation.
 
 Installation steps
 
     $ sudo apt update
     $ sudo apt install ngspice
+
+Installation Verification 
+
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/817fafa14027075e23581ce5d335aa7e5145b07b/week0/verification%20pic/ngspice.png)
+
 5.Magic VLSI – Layout Tool
+
 Magic VLSI is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.
 
 Installation steps
@@ -69,5 +87,7 @@ Follow the steps to install Magic on an Ubuntu system:
 
     # Install system-wide
     sudo make install
+    
+Installation Verification 
 
-![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/27fb6430b6c2a688d33ff798db5ba203edefe46d/week0/magicvlsi.png)
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/817fafa14027075e23581ce5d335aa7e5145b07b/week0/verification%20pic/magicvlsi.png)
