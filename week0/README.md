@@ -1,4 +1,3 @@
-System and Virtual Machine Configuration
 I configured a Virtual Machine (VM) with the following specifications:
 
 
