@@ -1,8 +1,8 @@
 WSL Setup → Docker Install → OpenLane Build → Ready to Design
 
-1.WSL SETUP
+1.WSL AND UBUNTU SETUP
 
-Step 1: Enable WSL
+Enable WSL
 
 Open PowerShell as Administrator and run:
 
@@ -87,5 +87,5 @@ Clone and Build OpenLane
 
 
 
-sudo docker run hello-world
+
 
