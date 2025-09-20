@@ -9,6 +9,9 @@ I configured a Virtual Machine (VM) with the following specifications:
   Storage :	50GB HDD
   
   vCPUs :	4
+
+TOOLS INSTALLATION AND VERIFICATION
+
 1.Yosys – RTL Synthesis Tool
 
 Purpose: Converts RTL code into gate-level representations.
