@@ -1,4 +1,45 @@
+1.Yosys – RTL Synthesis Tool
+Purpose: Converts RTL code into gate-level representations.
 
+Installation steps
+
+                               
+    $ git clone https://github.com/YosysHQ/yosys.git
+    $ cd yosys 
+    $ sudo apt install make # (If make is not installed please install it) 
+    $ sudo apt-get install build-essential clang bison flex \
+    libreadline-dev gawk tcl-dev libffi-dev git \
+    graphviz xdot pkg-config python3 libboost-system-dev \
+    libboost-python-dev libboost-filesystem-dev zlib1g-dev
+    $ make 
+    $ sudo make install
+    
+Installation Verification 
+
+2.Iverilog – Verilog Simulator
+Purpose: Compiles and simulates Verilog designs for functional verification.
+
+Installation steps
+
+    $ sudo apt-get install iverilog
+
+Installation Verification 
+
+3.GTKWave – Waveform Viewer
+Purpose: Analyzes and visualizes simulation waveforms for debugging.
+
+Installation steps
+
+    $ sudo apt update
+    $ sudo apt install gtkwave
+
+4.Ngspice – Circuit Simulator
+Purpose: Performs analog and mixed-signal circuit simulation.
+
+Installation steps
+
+    $ sudo apt update
+    $ sudo apt install ngspice
 5.Magic VLSI – Layout Tool
 Magic VLSI is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.
 
