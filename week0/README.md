@@ -1,7 +1,9 @@
 
 5.Magic VLSI – Layout Tool
 Magic VLSI is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.
+
 Installation steps
+
 Follow the steps to install Magic on an Ubuntu system:
 
     # Install required dependencies
