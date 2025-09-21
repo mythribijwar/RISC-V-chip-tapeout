@@ -85,7 +85,7 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
   d)Why Different Flavors of Gates?
 
    -Combinational delay (t_combi) in the logic path affects the maximum operating speed of a digital circuit (e.g., clock        speed).
-
+     
    -The clock period (t_clock) > (t_combi )for correct operation
    
    -Faster cells help reduce t_combi and increase speed, but are they always enough?
@@ -103,3 +103,26 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
   -Faster cells have wider transistors that can source or sink more current, charging and discharging capacitive loads          quicker → lower delay but larger area and power consumption.
 
   -Slower cells use smaller transistors → higher delay but save area and power.
+
+6)LAB WITH YOSYS  
+
+  StepS:
+ -Start Yosys
+
+    yosys
+ -Read the liberty library
+
+    read_liberty -lib /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+ -Read the Verilog code
+
+    read_verilog /home/vsduser/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/good_mux.v
+  -Synthesize the design
+
+    synth -top good_mux
+ -Technology mapping
+
+    abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+ -Visualize the gate-level netlist
+
+    show
+ ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/d96e62d4170455d7c54b38921b04ea18751fd00d/week1/day1/pictures/good_mux_synthesis.png)
