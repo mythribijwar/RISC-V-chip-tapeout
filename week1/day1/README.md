@@ -44,3 +44,14 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
    View  waveform
 
     gtkwave tb_good_mux.vcd
+    
+   ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/59762b3502b1246e29eebdc12ecb40e98543177a/week1/day1/pictures/tb_output.png)
+   
+4)VERILOG CODE
+  command to be given to see the code(access your verilog_files)
+  
+     /home/mythri/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files# gvim tb_good_mux.v -o good_mux.v
+     
+   ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/936638c86cd1a12cf1a3b646993b8d0c7b38c1ac/week1/day1/pictures/2_1%20mux%20code.png)
+   ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/936638c86cd1a12cf1a3b646993b8d0c7b38c1ac/week1/day1/pictures/2_1%20mux%20tb%20code.png)
+   
