@@ -60,46 +60,46 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
 
   a)What is Yosys?
 
-   . .Yosys is a powerful open-source synthesis tool for digital hardware. It takes your Verilog code and converts it into a       gate- level netlist, which is a detailed hardware blueprint showing gates and their connections.
+   -Yosys is a powerful open-source synthesis tool for digital hardware. It takes your Verilog code and converts it into a       gate- level netlist, which is a detailed hardware blueprint showing gates and their connections.
 
   ![image alt]( https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/d394bf9fb1d3f010ddffae0df3749d17d8c7abc1/week1/day1/pictures/yosys_setup.jpg)
 
   b)What is Synthesis (RTL to Gate-Level Translation)?
 
-   .Synthesis is the process of converting a Register Transfer Level (RTL) design (written in Verilog or VHDL) into a gate-      level netlist.
+   -Synthesis is the process of converting a Register Transfer Level (RTL) design (written in Verilog or VHDL) into a gate-      level netlist.
 
-   .The design is translated into logic gates (AND, OR, NAND, NOR, etc.).
+   -The design is translated into logic gates (AND, OR, NAND, NOR, etc.).
 
-   .The connections between these gates are established.
+   -The connections between these gates are established.
 
-   .The output is typically a netlist file (.sa or similar) that describes the gates and their interconnections.
+   -The output is typically a netlist file (.sa or similar) that describes the gates and their interconnections.
 
   c)What is a .lib file?
 
-   .A .lib file is a library file that contains:
+   -A .lib file is a library file that contains:
 
-   .A collection of logical modules or gates (like NAND, NOR, OR, etc.).
+   -A collection of logical modules or gates (like NAND, NOR, OR, etc.).
 
-   .Different “flavors” or variants of the same gate with different characteristics (speed, power, size).
+   -Different “flavors” or variants of the same gate with different characteristics (speed, power, size).
 
   d)Why Different Flavors of Gates?
 
-   .Combinational delay (t_combi) in the logic path affects the maximum operating speed of a digital circuit (e.g., clock        speed).
+   -Combinational delay (t_combi) in the logic path affects the maximum operating speed of a digital circuit (e.g., clock        speed).
 
-   .The clock period (t_clock) > (t_combi )for correct operation
+   -The clock period (t_clock) > (t_combi )for correct operation
    
-   .Faster cells help reduce t_combi and increase speed, but are they always enough?
+   -Faster cells help reduce t_combi and increase speed, but are they always enough?
 
   e)Why Do We Need Slow Cells?
 
-   .Slow cells are needed to avoid hold time violations (hold issues).
+   -Slow cells are needed to avoid hold time violations (hold issues).
 
-   .Example: If Flip-Flop A is fast and Flip-Flop B is too fast, B might capture the wrong data before A's output settles.
+   -Example: If Flip-Flop A is fast and Flip-Flop B is too fast, B might capture the wrong data before A's output settles.
 
-   .Mixing fast and slow cells helps balance timing and ensure reliable data transfer.
+   -Mixing fast and slow cells helps balance timing and ensure reliable data transfer.
 
  f)Faster Cells vs Slower Cells
 
-  .Faster cells have wider transistors that can source or sink more current, charging and discharging capacitive loads          quicker → lower delay but larger area and power consumption.
+  -Faster cells have wider transistors that can source or sink more current, charging and discharging capacitive loads          quicker → lower delay but larger area and power consumption.
 
-  .Slower cells use smaller transistors → higher delay but save area and power.
+  -Slower cells use smaller transistors → higher delay but save area and power.
