@@ -23,7 +23,7 @@
   - [Lab 10: 8-to-1 Demux Using Case](#lab-10-8-to-1-demux-using-case)
   - [Lab 11: 8-to-1 Demux Using For Loop](#lab-11-8-to-1-demux-using-for-loop)
   - [Lab 12: 8-bit Ripple Carry Adder with Generate Block](#lab-12-8-bit-ripple-carry-adder-with-generate-block)
-- [Summary](#summary)
+- [conclusion](#conclusion)
 
 ---
 
@@ -394,11 +394,11 @@ endmodule
 
 ---
 
-## Summary
+## conclusion
 
-- Use complete if-else and case statements to avoid unintended latch inference.
-- For loops and generate blocks are powerful for writing scalable, synthesizable code.
-- Always ensure every signal is assigned in every possible execution path for combinational logic.
-- Use labs to reinforce concepts with practical Verilog code and synthesis results.
+-Avoid unintended latch inference by using complete if-else and case statements: Make sure all conditions are fully covered so no signals remain unassigned in any scenario.
 
+-Leverage for loops and generate blocks: These constructs help create scalable and synthesizable Verilog code efficiently, especially for repetitive hardware structures.
+
+-Assign signals in every possible path: For combinational logic, ensure that every signal is explicitly assigned in all branches of your code to prevent unintended storage elements.
 ---
