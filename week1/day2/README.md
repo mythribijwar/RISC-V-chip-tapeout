@@ -1,5 +1,7 @@
 COMBINATIONAL LOGIC OPTIMIZATION
+
 <span style="color:red">This text is red</span>
+
 
 Combinational logic optimization focuses on minimizing the complexity of the logic circuit in terms of area, power, and delay while maintaining the same functionality. Optimization techniques are applied to reduce the number of gates, minimize gate delays, and lower the overall power consumption of the design.
 
