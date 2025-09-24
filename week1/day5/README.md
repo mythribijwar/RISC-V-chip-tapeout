@@ -400,5 +400,5 @@ endmodule
 
 -Leverage for loops and generate blocks: These constructs help create scalable and synthesizable Verilog code efficiently, especially for repetitive hardware structures.
 
--Assign signals in every possible path: For combinational logic, ensure that every signal is explicitly assigned in all branches of your code to prevent unintended storage elements.
+- Assign signals in every possible path: For combinational logic, ensure that every signal is explicitly assigned in all branches of your code to prevent unintended storage elements.
 ---
