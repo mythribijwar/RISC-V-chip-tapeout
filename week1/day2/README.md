@@ -154,16 +154,86 @@ end
 | Common Usage                               | Temp/intermediate combinational values  | Clocked processes, flip-flops               |
 
 ---
+## 4.LAB
+### Lab 4: Bad MUX Example (Common Pitfalls)
 
-## 4. Labs
+Verilog code with intentional issues:
 
-✅ You’ll apply today’s concepts in real simulation and synthesis tools:
+```verilog
+module bad_mux (input i0, input i1, input sel, output reg y);
+  always @ (sel) begin
+    if (sel)
+      y <= i1;
+    else 
+      y <= i0;
+  end
+endmodule
+```
 
-- Run a gate-level simulation using a netlist and SDF file.
-- Analyze a mismatch scenario and fix ambiguous RTL.
-- Experiment with blocking vs. non-blocking assignments in lab modules.
-- Test sensitivity list mismatches and correct them using `@(*)`.
+#### Issues:
+- **Incomplete sensitivity list**: Should include `i0`, `i1`, and `sel`.
+- **Non-blocking assignment in combinational logic**: Should use blocking assignments (`=`).
 
+**Corrected version:**
+```verilog
+always @ (*) begin
+  if (sel)
+    y = i1;
+  else
+    y = i0;
+end
+```
+
+![lab4](https://github.com/user-attachments/assets/4c2ede06-0605-4ff0-99cb-fc89844b89e4)
+
+---
+
+### Lab 5: GLS of Bad MUX
+
+Perform GLS on the `bad_mux`.  
+Expect simulation mismatches or warnings due to above issues.
+
+![lab5](https://github.com/user-attachments/assets/2e698404-27b5-4c4a-a811-41b5fc13db77)
+
+---
+
+### Lab 6: Blocking Assignment Caveat
+
+Verilog code:
+
+```verilog
+module blocking_caveat (input a, input b, input c, output reg d);
+  reg x;
+  always @ (*) begin
+    d = x & c;
+    x = a | b;
+  end
+endmodule
+```
+
+#### What’s wrong?
+- The order of assignments causes `d` to use the old value of `x`—not the newly computed value.
+- **Best Practice:** Assign intermediate variables before using them.
+
+**Corrected order:**
+```verilog
+always @ (*) begin
+  x = a | b;
+  d = x & c;
+end
+```
+
+![lab6](https://github.com/user-attachments/assets/42cac594-0008-4c7b-b415-43e6565b6081)
+
+---
+
+### Lab 7: Synthesis of the Blocking Caveat Module
+
+Synthesize the corrected version of the module and observe the results.
+
+![lab7](https://github.com/user-attachments/assets/833bfacc-3b76-40fa-814c-47f0d783a6e0)
+
+---
 ---
 
 ## 5. Summary
