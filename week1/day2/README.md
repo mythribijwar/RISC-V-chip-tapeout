@@ -43,3 +43,136 @@ This technique involves shifting registers in a sequential circuit to optimize p
 #### Sequential Logic Cloning (Floorplan-Aware Synthesis):
 Cloning is the replication of a sequential element (e.g., a register or flip-flop) to balance the timing across different parts of the circuit.
 
+### Lab 1
+
+Below is the Verilog code for Lab 1:
+
+```verilog
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
+```
+
+**Explanation:**
+- `assign y = a ? b : 0;` means:
+  - If `a` is true, `y` is assigned the value of `b`.
+  - If `a` is false, `y` is 0.
+
+Follow the steps from [Day 1 Synthesis Lab](https://github.com/Ahtesham18112011/RTL_workshop/tree/main/Day_1#6-synthesis-lab-with-yosys) and add the following between `abc -liberty` and `synth -top`:
+```shell
+opt_clean -purge
+```
+
+![Lab 1 Output](https://github.com/user-attachments/assets/4d224d8d-f6f5-4a37-9732-ab570b64e31e)
+
+---
+
+### Lab 2
+
+Verilog code:
+
+```verilog
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+```
+
+**Code Analysis:**
+- Acts as a multiplexer:
+  - `y = 1` if `a` is true.
+  - `y = b` if `a` is false.
+
+![Lab 3 Output](https://github.com/user-attachments/assets/157b16d3-cecd-441a-aacf-bae296910886)
+
+
+---
+
+### Lab 3
+
+Verilog code:
+
+```verilog
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+```
+
+**Functionality:**  
+2-to-1 multiplexer; `y = a ? 1 : b` (outputs `1` when `a` is true, otherwise `b`).
+
+![Lab 3 Output](https://github.com/user-attachments/assets/157b16d3-cecd-441a-aacf-bae296910886)
+
+---
+
+### Lab 4
+
+Verilog code:
+
+```verilog
+module opt_check4 (input a , input b , input c , output y);
+ assign y = a?(b?(a & c ):c):(!c);
+ endmodule
+```
+
+**Functionality:**
+- Three inputs (`a`, `b`, `c`), output `y`.
+- Nested ternary logic:
+  - If `a = 1`, `y = c`.
+  - If `a = 0`, `y = !c`.
+- Logic simplifies to:  
+  `y = a ? c : !c`
+
+![Lab 4 Output](https://github.com/user-attachments/assets/08d1e447-78c6-47c4-8c99-239645b38617)
+
+---
+
+### Lab 5
+
+Verilog code:
+
+```verilog
+module dff_const1(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+end
+endmodule
+```
+
+**Functionality:**
+- D flip-flop with:
+  - Asynchronous reset to 0
+  - Loads constant `1` when not in reset
+
+![Lab 5 Output](https://github.com/user-attachments/assets/a42fac06-a092-4efc-be39-33b263caaaa1)
+
+---
+
+### Lab 6
+
+Verilog code:
+
+```verilog
+module dff_const2(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b1;
+	else
+		q <= 1'b1;
+end
+endmodule
+```
+
+**Functionality:**
+- D flip-flop always sets output `q` to `1` (regardless of reset or clock).
+
+![Lab 6 Output](https://github.com/user-attachments/assets/ae45f7db-0a7f-4256-b43b-01cc4a1588f7)
+
+---
+
+
+
