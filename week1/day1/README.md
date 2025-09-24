@@ -1,4 +1,4 @@
-1)WHAT IS A SIMULATOR, DESIGN, AND TESTBENCH?
+# 1)WHAT IS A SIMULATOR, DESIGN, AND TESTBENCH?
 
  Simulator
 
@@ -14,12 +14,12 @@
 
 ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/194c2e54db9721c223e69d47952dabd7f608f9bd/week1/day1/pictures/testbench_pic.jpg)
 
-2)IVERILOG
+# 2)IVERILOG
 
 Iverilog is an open-source simulator for Verilog that compiles and simulates both design and testbench files. It generates a .vcd file for waveform visualization in GTKWave.
 ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/194c2e54db9721c223e69d47952dabd7f608f9bd/week1/day1/pictures/iverilog_based_simulationflow.jpg)
 
-3)LAB:simulating MULTIPLEXER 2:1
+# 3)LAB:simulating MULTIPLEXER 2:1
 
  follow the below steps
  
@@ -47,7 +47,7 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
     
    ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/59762b3502b1246e29eebdc12ecb40e98543177a/week1/day1/pictures/tb_output.png)
    
-4)VERILOG CODE
+# 4)VERILOG CODE
 
   command to be given to see the code(access your verilog_files)
   
@@ -56,7 +56,7 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
    ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/936638c86cd1a12cf1a3b646993b8d0c7b38c1ac/week1/day1/pictures/2_1%20mux%20code.png)
    ![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/936638c86cd1a12cf1a3b646993b8d0c7b38c1ac/week1/day1/pictures/2_1%20mux%20tb%20code.png)
    
-5)INTRODUCTION TO YOSYS AND GATE LIBRARIES
+# 5)INTRODUCTION TO YOSYS AND GATE LIBRARIES
 
   a)What is Yosys?
 
@@ -104,7 +104,7 @@ Iverilog is an open-source simulator for Verilog that compiles and simulates bot
 
   -Slower cells use smaller transistors → higher delay but save area and power.
 
-6)LAB WITH YOSYS  
+# 6)LAB WITH YOSYS  
 
   StepS:
  -Start Yosys
