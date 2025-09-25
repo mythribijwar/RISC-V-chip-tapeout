@@ -141,7 +141,7 @@ endmodule
 
 ---
 
-### Lab 5: Complete Case Statement
+### Lab 5: Complete Case and incomplete case Statement
 
 ```verilog
 module comp_case (input i0, input i1, input i2, input [1:0] sel, output reg y);
@@ -154,13 +154,25 @@ always @(*) begin
 end
 endmodule
 ```
-![compcase](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/comp_case_gtk.png)
+```verilog
+module incomp_case (input i0, input i1, input i2, input [1:0] sel, output reg y);
+always @(*) begin
+    case(sel)
+        2'b00 : y = i0;
+        2'b01 : y = i1;
+    endcase
+end
+endmodule
+```
+
 
 ---
 
 ### Lab 6: Synthesis Result of Lab 5
 
 ![compcase_synth](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/comp_case.png)
+![incompcase_synth](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2f0ae5d887943d35e8d48af1cbd3b264c794414e/week1/day4/pictures/incomp_case.png)
+
 
 ---
 
