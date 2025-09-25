@@ -178,6 +178,12 @@ endmodule
 Synthesize the above MUX using Yosys.  
 _Follow the standard Yosys synthesis flow._
 
+with a extra command
+```shell
+
+   write_verilog -noattr ternary_operator_mux_net.v
+```
+
 ![lab2](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/ternary_operator_mux.png)
 
 ---
@@ -188,7 +194,7 @@ Run GLS for the synthesized MUX.
 Use this command (adjust paths as needed):
 
 ```shell
-iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux.v testbench.v
+iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux_net.v testbench.v
 ```
 
 ![lab3](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/ternary_operator_mux_gtk_check.png)
