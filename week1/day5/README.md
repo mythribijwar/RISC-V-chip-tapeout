@@ -109,13 +109,13 @@ always @(*) begin
 end
 endmodule
 ```
-![in_comp_if](https://github.com/user-attachments/assets/91d1cc1d-bb3a-4ea8-a272-363414777868)
+![in_comp_if](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/incomp_if_gtk.png)
 
 ---
 
 ### Lab 2: Synthesis Result of Lab 1
 
-![incomp_synth](https://github.com/user-attachments/assets/691045e7-39e0-4e6c-98bd-511b501fbe35)
+![incomp_synth](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/incomp_if.png)
 
 ---
 
@@ -131,13 +131,13 @@ always @(*) begin
 end
 endmodule
 ```
-![icomp2](https://github.com/user-attachments/assets/2f614956-e4af-4d29-80ae-13a167e7831d)
+![icomp2](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/incomp_if2_gtk.png)
 
 ---
 
 ### Lab 4: Synthesis Result of Lab 3
 
-![incomp2synth](https://github.com/user-attachments/assets/880ff7bb-23fb-4362-bf8f-a2494a854b53)
+![incomp2synth](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/incomp_if2.png)
 
 ---
 
@@ -154,13 +154,13 @@ always @(*) begin
 end
 endmodule
 ```
-![compcase](https://github.com/user-attachments/assets/cfe97c45-a487-4f06-b4a2-74b3a61bee14)
+![compcase](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/comp_case_gtk.png)
 
 ---
 
 ### Lab 6: Synthesis Result of Lab 5
 
-![compcase_synth](https://github.com/user-attachments/assets/8c871511-6e55-4e80-be11-86e9efd87cad)
+![compcase_synth](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/comp_case.png)
 
 ---
 
@@ -182,7 +182,9 @@ always @(*) begin
 end
 endmodule
 ```
-![badcase](https://github.com/user-attachments/assets/4ccf37aa-5502-4750-bedb-9b2ec0748a53)
+![badcase](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/bad_case_gtk.png)
+#### synthesis
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/bad_case.png)
 
 ---
 
@@ -209,9 +211,9 @@ always @(*) begin
 end
 endmodule
 ```
-![Screenshot_2025-05-28_12-39-30](https://github.com/user-attachments/assets/3f6068f3-726d-4192-b3cd-f88b3611e752)
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/8729470d00f61f328c751b440b78a33025c43c79/week1/day4/pictures/partial_case_assign.png)
 
-> **Note:** Steps to perform the above labs are shown in [Day 1](https://github.com/Ahtesham18112011/RTL_workshop/tree/main/Day_1).
+> **Note:** Steps to perform the above labs are shown in [Day 1]
 
 ---
 
@@ -272,7 +274,7 @@ endgenerate
 
 An RCA adds binary numbers using a chain of full adders. To add `n` bits, you need `n` full adders. Each carry-out connects to the carry-in of the next stage.
 
-![image](https://github.com/user-attachments/assets/f1ec27d4-b770-4d7a-a418-6435fc81f538)
+![image](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/rca_image.png)
 
 ---
 
@@ -297,7 +299,7 @@ always @(*) begin
 end
 endmodule
 ```
-![mux_generate](https://github.com/user-attachments/assets/80789638-c349-44a9-92f4-7597d5925c63)
+![mux_generate](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/mux_generate_gtk.png)
 
 ---
 
@@ -327,7 +329,8 @@ always @(*) begin
 end
 endmodule
 ```
-![demux-case](https://github.com/user-attachments/assets/1836a255-e260-47de-9a8e-45899b19fc03)
+![demux-case](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/demux_case_gtk.png)
+
 
 ---
 
@@ -352,7 +355,11 @@ always @(*) begin
 end
 endmodule
 ```
-![demux-generate](https://github.com/user-attachments/assets/a5a2c004-a16f-44cd-8d80-c23f1c932e6c)
+![demux-generate](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/demux_generate_gtk.png)
+
+#### gls check
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/demux_generate_gtk_check.png)
+
 
 ---
 
@@ -386,12 +393,11 @@ module fa (input a, input b, input c, output co, output sum);
     assign {co, sum} = a + b + c;
 endmodule
 ```
-![rca_org](https://github.com/user-attachments/assets/1d8876f9-e303-4a73-945e-97756a37bb73)
+![rca_org](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/2e05777091813c516f664639cae57af92ae5445d/week1/day4/pictures/rca_gtk.png)
 
 ---
 
-> **Note:** Steps to perform the above labs are already shown in [Day 1](https://github.com/Ahtesham18112011/RTL_workshop/tree/main/Day_1).
-
+> **Note:** Steps to perform the above labs are already shown in previous days
 ---
 
 ## conclusion
