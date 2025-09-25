@@ -32,7 +32,7 @@ Open the file:
     gedit sky130_fd_sc_hd__tt_025C_1v80.lib
 
 
-![image alt](
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/variations.png)
 
 ## Hierarchical vs. Flattened Synthesis
 
@@ -55,7 +55,7 @@ Supports a modular workflow, facilitating integration with other design tools.
 Limited cross-module optimization opportunities.
 
 Additional configuration may be needed for comprehensive reporting.
-![image alt](
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/multiple_modules.png)
 
 ### Flattened Synthesis
 
@@ -76,7 +76,9 @@ Longer synthesis time, especially for large designs.
 Loss of hierarchy complicates debugging and analysis.
 
 Potentially higher memory usage and increased netlist complexity.
-![image alt](
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/multiple_modules_flat.png)
+
+#### simulation and systhesis steps are given at last
 ## Flip-Flop Coding Styles
 
 Flip-flops are fundamental sequential elements in digital design, used to store binary data. Below are efficient coding styles for different reset/set behaviors.
@@ -94,7 +96,8 @@ endmodule
 ```
 - **Asynchronous reset**: Overrides clock, setting q to 0 immediately.
 - **Edge-triggered**: Captures d on rising clock edge if reset is low.
-
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/dff_asyncres_gtk.png)
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/dff_asyncres.png)
 ### Asynchronous Set D Flip-Flop
 
 ```verilog
@@ -107,7 +110,8 @@ module dff_async_set (input clk, input async_set, input d, output reg q);
 endmodule
 ```
 - **Asynchronous set**: Overrides clock, setting q to 1 immediately.
-
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/dff_async_set_gtk.png)
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/dff_async_set.png)
 ### Synchronous Reset D Flip-Flop
 
 ```verilog
@@ -120,7 +124,8 @@ module dff_syncres (input clk, input async_reset, input sync_reset, input d, out
 endmodule
 ```
 - **Synchronous reset**: Takes effect only on the clock edge.
-
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/dff_asyncres_syncres_gtk.png)
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/7b4979b6b545b3831da384dc8f6f7161db587ddf/week1/day2/pictures/dff_syncres.png)
 ---
 
 ## Simulation and Synthesis Workflow
@@ -167,8 +172,13 @@ endmodule
 6. Technology mapping:
    ```shell
    abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+   
+   ``` 
+7. for flattend synthesis :
+   ```shell
+   flatten
    ```
-7. Visualize the gate-level netlist:
+8. Visualize the gate-level netlist:
    ```shell
    show
    ```
