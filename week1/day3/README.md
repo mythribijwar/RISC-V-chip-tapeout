@@ -9,6 +9,7 @@ Combinational logic optimization focuses on minimizing the complexity of the log
    ### 1)Constant Propagation (Direct Optimization):
 
 Constant propagation is a form of optimization where constant values are substituted directly into Boolean expressions. This simplifies the design by eliminating variables that have a fixed value.
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/boolean%20example.jpg)
 
   ###  2)Boolean Logic Optimization:
 
@@ -62,8 +63,9 @@ Follow the steps from [Day 1 Synthesis Lab](https://github.com/Ahtesham18112011/
 ```shell
 opt_clean -purge
 ```
+![Lab 1 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/opt_check.png)
 
-![Lab 1 Output](https://github.com/user-attachments/assets/4d224d8d-f6f5-4a37-9732-ab570b64e31e)
+
 
 ---
 
@@ -82,29 +84,15 @@ endmodule
   - `y = 1` if `a` is true.
   - `y = b` if `a` is false.
 
-![Lab 3 Output](https://github.com/user-attachments/assets/157b16d3-cecd-441a-aacf-bae296910886)
+
+![Lab 2 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/opt_check2.png)
 
 
 ---
+
+
 
 ### Lab 3
-
-Verilog code:
-
-```verilog
-module opt_check2 (input a , input b , output y);
-	assign y = a?1:b;
-endmodule
-```
-
-**Functionality:**  
-2-to-1 multiplexer; `y = a ? 1 : b` (outputs `1` when `a` is true, otherwise `b`).
-
-![Lab 3 Output](https://github.com/user-attachments/assets/157b16d3-cecd-441a-aacf-bae296910886)
-
----
-
-### Lab 4
 
 Verilog code:
 
@@ -122,11 +110,11 @@ module opt_check4 (input a , input b , input c , output y);
 - Logic simplifies to:  
   `y = a ? c : !c`
 
-![Lab 4 Output](https://github.com/user-attachments/assets/08d1e447-78c6-47c4-8c99-239645b38617)
+![Lab 3 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/opt_check4.png)
 
 ---
 
-### Lab 5
+### Lab 4
 
 Verilog code:
 
@@ -147,11 +135,12 @@ endmodule
   - Asynchronous reset to 0
   - Loads constant `1` when not in reset
 
-![Lab 5 Output](https://github.com/user-attachments/assets/a42fac06-a092-4efc-be39-33b263caaaa1)
+![Lab 4 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/dff_const1_gtk.png)
+![Lab 4 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/dff_const1.png)
 
 ---
 
-### Lab 6
+### Lab 5
 
 Verilog code:
 
@@ -170,7 +159,8 @@ endmodule
 **Functionality:**
 - D flip-flop always sets output `q` to `1` (regardless of reset or clock).
 
-![Lab 6 Output](https://github.com/user-attachments/assets/ae45f7db-0a7f-4256-b43b-01cc4a1588f7)
+![Lab 5 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/dff_const2_gtk.png)
+![Lab 5 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/dff_const2.png)
 
 ---
 
