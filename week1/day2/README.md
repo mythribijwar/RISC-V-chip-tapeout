@@ -178,11 +178,19 @@ endmodule
    ```shell
    flatten
    ```
-8. Visualize the gate-level netlist:
+8. write verilog code
+   ```shell
+   write_verilog -noattr filename_flat.v
+   ```
+9. opens file after flattening
+   ```shell
+   !gvim filename_flat.v
+   ```
+10. Visualize the gate-level netlist:
    ```shell
    show
    ```
-
+user hier in 8,9 instead of flat for hierachial sysnthesis
 
 
 
