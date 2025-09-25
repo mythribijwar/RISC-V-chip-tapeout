@@ -47,6 +47,8 @@ The session includes conceptual insights and practical labs to reinforce each to
 | Functional GLS   | Logic-only simulation (zero-delay or unit-delay), no real-world timing.    |
 | Timing GLS       | Uses timing annotations to simulate actual delays (SDF back-annotation).    |
 
+
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/gls.jpg)
 ---
 
 ## 2. Understanding Synthesis-Simulation Mismatches
@@ -155,6 +157,44 @@ end
 
 ---
 ## 4.LAB
+
+### Lab 1: Ternary Operator MUX
+
+Verilog code for a simple 2:1 multiplexer using a ternary operator:
+
+```verilog
+module ternary_operator_mux (input i0, input i1, input sel, output y);
+  assign y = sel ? i1 : i0;
+endmodule
+```
+- **Function:** `y = i1` if `sel = 1`; else `y = i0`.
+
+![lab1](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/ternary_operator_mux_gtk.png)
+
+---
+
+### Lab 2: Synthesis Using Yosys
+
+Synthesize the above MUX using Yosys.  
+_Follow the standard Yosys synthesis flow._
+
+![lab2](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/ternary_operator_mux.png)
+
+---
+
+### Lab 3: Gate-Level Simulation (GLS) of MUX
+
+Run GLS for the synthesized MUX.  
+Use this command (adjust paths as needed):
+
+```shell
+iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux.v testbench.v
+```
+
+![lab3](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/ternary_operator_mux_gtk_check.png)
+
+---
+
 ### Lab 4: Bad MUX Example (Common Pitfalls)
 
 Verilog code with intentional issues:
@@ -184,7 +224,7 @@ always @ (*) begin
 end
 ```
 
-![lab4](https://github.com/user-attachments/assets/4c2ede06-0605-4ff0-99cb-fc89844b89e4)
+![lab4](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/bad_mux_gtk.png)
 
 ---
 
@@ -193,7 +233,7 @@ end
 Perform GLS on the `bad_mux`.  
 Expect simulation mismatches or warnings due to above issues.
 
-![lab5](https://github.com/user-attachments/assets/2e698404-27b5-4c4a-a811-41b5fc13db77)
+![lab5](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/bad_mux_gtk_check.png)
 
 ---
 
@@ -223,18 +263,13 @@ always @ (*) begin
 end
 ```
 
-![lab6](https://github.com/user-attachments/assets/42cac594-0008-4c7b-b415-43e6565b6081)
+![lab6](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/139857eb98bb2290e11d427fddb7979b848f246a/week1/day4/pictures/blocking_caveat_gtk.png)
 
 ---
 
-### Lab 7: Synthesis of the Blocking Caveat Module
-
-Synthesize the corrected version of the module and observe the results.
-
-![lab7](https://github.com/user-attachments/assets/833bfacc-3b76-40fa-814c-47f0d783a6e0)
 
 ---
----
+
 
 ## 5. Summary
 
