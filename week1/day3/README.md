@@ -166,11 +166,11 @@ endmodule
 ### Lab 6
  #### seq optimzation of unused outputs
  code:
- ![img alt](
+ ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/bbc7105d954b598d7c429a070c1daa1610aa38e0/week1/day3/pictures/counter_opt_code.png)
 a  logic which is unused need not be in design 
 in counter_opt count[2],count[1] are unused, so they are not present in design
-![img alt](
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/bbc7105d954b598d7c429a070c1daa1610aa38e0/week1/day3/pictures/counter_opt_yosys.png)
 in this case we consider all three bits (giving a particcular value q= count[2:0] == 3'b100)
-![img alt](
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/bbc7105d954b598d7c429a070c1daa1610aa38e0/week1/day3/pictures/counter_optt_yosys.png)
 
 
