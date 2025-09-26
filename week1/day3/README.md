@@ -163,6 +163,14 @@ endmodule
 ![Lab 5 Output](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/3ded3490eb26b76fb221a5ea56cf468aef25f85a/week1/day3/pictures/dff_const2.png)
 
 ---
-
+### Lab 6
+ #### seq optimzation of unused outputs
+ code:
+ ![img alt](
+a  logic which is unused need not be in design 
+in counter_opt count[2],count[1] are unused, so they are not present in design
+![img alt](
+in this case we consider all three bits (giving a particcular value q= count[2:0] == 3'b100)
+![img alt](
 
 
