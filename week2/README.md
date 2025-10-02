@@ -213,9 +213,10 @@ Make sure the following tools are installed before running the simulations:
 
 > ⚙️ This project is intended to be executed in a Unix-like environment such as **Linux** or **macOS**.
 
-```bash 
 ### 1. Setup 
 Clone or set up the directory structure as follows:
+
+```bash
         VSDBabySoC/
 ├── src/
 │   ├── include/
