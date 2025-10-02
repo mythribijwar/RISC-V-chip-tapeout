@@ -312,6 +312,8 @@ src/module/testbench.v src/module/vsdbabysoc.v
 
 cd output/pre_synth_sim
 ./pre_synth_sim.out
+```
+explanation:
 -DPRE_SYNTH_SIM defines a macro for conditional compilation in the testbench.
 The resulting pre_synth_sim.vcd file can be visualized using GTKWave.
 
@@ -328,10 +330,12 @@ Copy code
 iverilog -o output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM \
 -I src/include -I src/module \
 src/module/testbench.v output/synthesized/vsdbabysoc.synth.v
-
 cd output/post_synth_sim
 ./post_synth_sim.out
+
+```
 This verifies the SoC behavior after synthesis.
+
 ### 5. Summary
 vsdbabysoc.v – Integrates the RISC-V core, PLL, and DAC
 rvmyth.v – Produces a 10-bit digital output signal
