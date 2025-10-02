@@ -215,7 +215,7 @@ Make sure the following tools are installed before running the simulations:
 
 ### 1. Setup 
 Clone or set up the directory structure as follows:
-  .        VSDBabySoC/
+        VSDBabySoC/
 ├── src/
 │   ├── include/
 │   │   ├── sandpiper.vh
@@ -285,3 +285,35 @@ The `avsddac` module converts the 10-bit digital signal from the processor into 
 - `OUT` – analog output signal  
 
 ---
+### 3. Testbench
+
+The `testbench.v` module verifies the functionality of the `vsdbabysoc` design. It provides:
+
+- Clock generation  
+- Reset initialization  
+- Waveform dumping for simulation  
+
+**Waveform files generated:**
+- `pre_synth_sim.vcd` – pre-synthesis simulation  
+- `post_synth_sim.vcd` – post-synthesis simulation  
+
+---
+
+### 4. Simulation Steps
+
+#### Pre-Synthesis Simulation
+
+Run the following commands:
+
+```bash
+iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
+-I src/include -I src/module \
+src/module/testbench.v src/module/vsdbabysoc.v
+
+cd output/pre_synth_sim
+./pre_synth_sim.out
+-DPRE_SYNTH_SIM defines a macro for conditional compilation in the testbench.
+The resulting pre_synth_sim.vcd file can be visualized using GTKWave.
+Viewing Waveforms
+
+```
