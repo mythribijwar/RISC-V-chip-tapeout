@@ -213,6 +213,7 @@ Make sure the following tools are installed before running the simulations:
 
 > ⚙️ This project is intended to be executed in a Unix-like environment such as **Linux** or **macOS**.
 
+```bash 
 ### 1. Setup 
 Clone or set up the directory structure as follows:
         VSDBabySoC/
@@ -228,6 +229,8 @@ Clone or set up the directory structure as follows:
 │   │   └── testbench.v       # Testbench for simulation
 └── output/
 └── compiled_tlv/         # Holds compiled intermediate files if needed
+
+```
 ### 2. Module Descriptions
 
 #### 2.1 Top-Level SoC: `vsdbabysoc.v`
