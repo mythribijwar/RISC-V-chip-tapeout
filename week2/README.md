@@ -336,7 +336,6 @@ cd output/post_synth_sim
 ./post_synth_sim.out
 ```
 
-```
 This verifies the SoC behavior after synthesis.
 
 ### 5. Summary
