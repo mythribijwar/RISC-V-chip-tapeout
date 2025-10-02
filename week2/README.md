@@ -186,3 +186,29 @@ By combining a **RISC-V processor**, **PLL**, and **DAC**, it demonstrates the f
 This project provides a clear and practical foundation for learning about **embedded systems**, **SoC architecture**, and **digital-to-analog interfacing** — essential concepts in modern chip design.
 
 ---
+
+## VSDBabySoC Project
+
+### Overview
+
+**VSDBabySoC** is a small-scale System-on-Chip (SoC) design that combines three main hardware blocks — a **RISC-V processor (rvmyth)**, a **Phase-Locked Loop (PLL)**, and a **Digital-to-Analog Converter (DAC)**.  
+The project showcases how these IP cores can be integrated into a single system and verified through **pre-synthesis** and **post-synthesis simulations**.
+
+---
+
+### Project Structure
+
+- **src/include/** → Contains Verilog header (`.vh`) files defining macros, constants, and parameters used in the design.  
+- **src/module/** → Includes Verilog source code for each module that makes up the SoC.  
+- **output/** → Stores simulation results, compiled files, and waveform outputs.
+
+---
+
+### Requirements
+
+Make sure the following tools are installed before running the simulations:
+
+- **Icarus Verilog** – to compile and simulate the Verilog design  
+- **GTKWave** – to visualize the waveform outputs (`.vcd` files)
+
+> ⚙️ This project is intended to be executed in a Unix-like environment such as **Linux** or **macOS**.
