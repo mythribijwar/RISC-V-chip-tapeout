@@ -213,6 +213,21 @@ Make sure the following tools are installed before running the simulations:
 
 > ⚙️ This project is intended to be executed in a Unix-like environment such as **Linux** or **macOS**.
 
+### 1. Setup 
+Clone or set up the directory structure as follows:
+  .        VSDBabySoC/
+├── src/
+│   ├── include/
+│   │   ├── sandpiper.vh
+│   │   └── other header files...
+│   ├── module/
+│   │   ├── vsdbabysoc.v      # Top-level module integrating all components
+│   │   ├── rvmyth.v          # RISC-V core module
+│   │   ├── avsdpll.v         # PLL module
+│   │   ├── avsddac.v         # DAC module
+│   │   └── testbench.v       # Testbench for simulation
+└── output/
+└── compiled_tlv/         # Holds compiled intermediate files if needed
 ### 2. Module Descriptions
 
 #### 2.1 Top-Level SoC: `vsdbabysoc.v`
