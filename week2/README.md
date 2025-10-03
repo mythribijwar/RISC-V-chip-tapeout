@@ -105,7 +105,8 @@ This makes SoCs ideal for **compact**, **power-efficient**, and **high-performan
    - Highly optimized for speed and efficiency.
 
 #### soc designflow
-![img alt]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/soc_design_flow.png}
+![image alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/soc_design_flow.png)
+
 ---
 
 ## **3. Introduction to VSDBabySoC**
@@ -154,7 +155,7 @@ A **PLL** is an electronic control system that keeps its output signal synchroni
 3. **Voltage-Controlled Oscillator (VCO):** Adjusts its frequency based on the control voltage.
 
 #### blockdaigram
-![img alt]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/pll.png}
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/pll.png)
 
 **Purpose:**  
 Maintains frequency stability and ensures synchronized operation within the SoC.
@@ -172,9 +173,9 @@ A **DAC** transforms digital binary values (0s and 1s) into continuous analog si
 
 **Types of DACs:**
 - **Weighted Resistor DAC:** Uses resistors of different values for each bit.  
-  [img alt!]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/weighted%20resistor%20DAC.jpg}
+  ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/weighted%20resistor%20DAC.jpg)
 - **R-2R Ladder DAC:** Uses a repeating resistor network (R and 2R) for easier design.
-  [img alt!]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/r2r%20ladder%20dac.png}
+  ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/r2r%20ladder%20dac.png)
 
 **In BabySoC:**  
 - Uses a **10-bit DAC**, which means it converts 10-bit digital data into one precise analog output.  
@@ -352,11 +353,11 @@ viewing waveforms
 ```bash
   gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 ```
-![img alt]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/presynth.png}
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/presynth.png)
 
-In this picture we can see the following signals:
+In this picture we see the following signals:
 
-CLK: This is the input CLK signal of the RVMYTH core. This signal comes from the PLL, originally.
+CLK: This is the input CLK  of the RVMYTH core. This signal comes from the PLL, originally.
 
 reset: This is the input reset signal of the RVMYTH core. This signal comes from an external source, originally.
 
