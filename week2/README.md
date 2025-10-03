@@ -246,6 +246,7 @@ Clone or set up the directory structure as follows:
 
 The `vsdbabysoc` module serves as the top-level design integrating the RISC-V core (`rvmyth`), PLL (`avsdpll`), and DAC (`avsddac`).
 
+[VSDBabySoC](https://github.com/manili/VSDBabySoC.git)
 **Inputs:**
 - `reset` – resets the processor  
 - `VCO_IN`, `ENb_CP`, `ENb_VCO`, `REF` – PLL control signals  
@@ -262,7 +263,7 @@ The `vsdbabysoc` module serves as the top-level design integrating the RISC-V co
 
 #### 2.2 RISC-V Core: `rvmyth.v`
 
-The `rvmyth` module implements a simple RISC-V processor that outputs a 10-bit digital signal to the DAC.
+The `rvmyth` module implements a simple RISC-V processor that outputs a 10-bit digital signal to the DAC.  [rvmyth](https://github.com/kunalg123/rvmyth/)
 
 **Inputs:**
 - `CLK` – clock signal from the PLL  
@@ -276,7 +277,7 @@ The `rvmyth` module implements a simple RISC-V processor that outputs a 10-bit d
 #### 2.3 PLL Module: `avsdpll.v`
 
 The `avsdpll` module generates a stable clock to synchronize the RISC-V core and other modules.
-
+[avsdpll](https://github.com/lakshmi-sathi/avsdpll_1v8.git)
 **Inputs:**
 - `VCO_IN`, `ENb_CP`, `ENb_VCO`, `REF` – PLL control and reference signals  
 
@@ -288,7 +289,7 @@ The `avsdpll` module generates a stable clock to synchronize the RISC-V core and
 #### 2.4 DAC Module: `avsddac.v`
 
 The `avsddac` module converts the 10-bit digital signal from the processor into an analog output.
-
+ [avsddac](https://github.com/vsdip/rvmyth_avsddac_interface.git)
 **Inputs:**
 - `D` – 10-bit digital input from the processor  
 - `VREFH` – DAC reference voltage  
