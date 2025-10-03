@@ -317,12 +317,21 @@ The `testbench.v` module verifies the functionality of the `vsdbabysoc` design. 
 
 ---
 
-### 4. Simulation Steps
-
-#### Pre-Synthesis Simulation
+### 4. Simulation Steps:
 
 Run the following commands:
 
+1.install the required packages 
+```bash
+ $ sudo apt install make python python3 python3-pip git iverilog gtkwave docker.io
+ $ sudo chmod 666 /var/run/docker.sock
+ $ cd ~
+ $ pip3 install pyyaml click sandpiper-saas
+```
+2.gitclone VSDBabySoc design files and testbenches
+
+3. cd/home/mythri/VSDBabySoc
+#### Pre-Synthesis Simulation
 ```bash
 iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
 -I src/include -I src/module \
@@ -343,6 +352,8 @@ viewing waveforms
 ```bash
   gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 ```
+![img alt]{}
+
 In this picture we can see the following signals:
 
 CLK: This is the input CLK signal of the RVMYTH core. This signal comes from the PLL, originally.
