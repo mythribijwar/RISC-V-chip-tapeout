@@ -1,5 +1,5 @@
 # 🧠 SFAL-VSD-SoC-Journey  
-## 11. Fundamentals of SoC Design  
+## Fundamentals of SoC Design  
 
 ---
 
@@ -105,7 +105,7 @@ This makes SoCs ideal for **compact**, **power-efficient**, and **high-performan
    - Highly optimized for speed and efficiency.
 
 #### soc designflow
-[img alt!]{}
+![img alt]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/soc_design_flow.png}
 ---
 
 ## **3. Introduction to VSDBabySoC**
@@ -154,7 +154,7 @@ A **PLL** is an electronic control system that keeps its output signal synchroni
 3. **Voltage-Controlled Oscillator (VCO):** Adjusts its frequency based on the control voltage.
 
 #### blockdaigram
-[img alt!]{}
+![img alt]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/pll.png}
 
 **Purpose:**  
 Maintains frequency stability and ensures synchronized operation within the SoC.
@@ -172,9 +172,9 @@ A **DAC** transforms digital binary values (0s and 1s) into continuous analog si
 
 **Types of DACs:**
 - **Weighted Resistor DAC:** Uses resistors of different values for each bit.  
-  [img alt!]{}
+  [img alt!]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/weighted%20resistor%20DAC.jpg}
 - **R-2R Ladder DAC:** Uses a repeating resistor network (R and 2R) for easier design.
-  [img alt!]{}
+  [img alt!]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/r2r%20ladder%20dac.png}
 
 **In BabySoC:**  
 - Uses a **10-bit DAC**, which means it converts 10-bit digital data into one precise analog output.  
@@ -352,7 +352,7 @@ viewing waveforms
 ```bash
   gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 ```
-![img alt]{}
+![img alt]{https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/969ddc6c81c0d245dea89903bb52df5e4b3e9bca/week2/pictures/presynth.png}
 
 In this picture we can see the following signals:
 
