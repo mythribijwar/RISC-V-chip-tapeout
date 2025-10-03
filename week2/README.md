@@ -241,7 +241,7 @@ Clone or set up the directory structure as follows:
 └── compiled_tlv/         # Holds compiled intermediate files if needed
 
 ```
-### 2. Module Descriptions
+### 2. Module Descriptions(Git clone)
 
 #### 2.1 Top-Level SoC: `vsdbabysoc.v`
 
