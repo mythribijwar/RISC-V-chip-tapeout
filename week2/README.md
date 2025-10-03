@@ -339,8 +339,13 @@ pip install pyyaml click sandpiper-saas
 sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
 ```
 2.gitclone VSDBabySoc design files and testbenches
+```bash
+cd ~/VLSI
+git clone https://github.com/manili/VSDBabySoC.git
+cd VSDBabySoC/
+```
+3.cd /home/mythri/VLSI/VSDBabySoc
 
-3. cd /home/mythri/VSDBabySoc
 #### Pre-Synthesis Simulation
 ```bash
 mkdir -p output/pre_synth_sim
