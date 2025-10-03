@@ -241,7 +241,7 @@ Clone or set up the directory structure as follows:
 └── compiled_tlv/         # Holds compiled intermediate files if needed
 
 ```
-### 2. Module Descriptions(Git clone)
+### 2. Module Descriptions
 
 #### 2.1 Top-Level SoC: `vsdbabysoc.v`
 
@@ -324,19 +324,31 @@ Run the following commands:
 
 1.install the required packages 
 ```bash
- $ sudo apt install make python python3 python3-pip git iverilog gtkwave docker.io
- $ sudo chmod 666 /var/run/docker.sock
- $ cd ~
- $ pip3 install pyyaml click sandpiper-saas
+ # Install tools
+sudo apt update
+sudo apt install python3-venv python3-pip
+
+# Create virtual env
+python3 -m venv sp_env
+source sp_env/bin/activate
+
+# Install SandPiper-SaaS
+pip install pyyaml click sandpiper-saas
+
+# Convert TLV → Verilog
+sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
 ```
 2.gitclone VSDBabySoc design files and testbenches
 
 3. cd /home/mythri/VSDBabySoc
 #### Pre-Synthesis Simulation
 ```bash
-iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
--I src/include -I src/module \
-src/module/testbench.v src/module/vsdbabysoc.v
+mkdir -p output/pre_synth_sim
+
+iverilog -o output/pre_synth_sim/pre_synth_sim.out \
+  -DPRE_SYNTH_SIM \
+  -I src/include -I src/module \
+  src/module/testbench.v
 
 cd output/pre_synth_sim
 ./pre_synth_sim.out
