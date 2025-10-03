@@ -12,3 +12,7 @@ done
 #### Day 5: Optimization in Synthesis
 
 done
+### week 2 
+  #### To build a solid understanding of SoC fundamentals and practice functional modelling of the BabySoC using simulation tools (Icarus Verilog & GTKWave). 
+   done
+   
