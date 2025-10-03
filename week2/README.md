@@ -331,7 +331,7 @@ Run the following commands:
 ```
 2.gitclone VSDBabySoc design files and testbenches
 
-3. cd/home/mythri/VSDBabySoc
+3. cd /home/mythri/VSDBabySoc
 #### Pre-Synthesis Simulation
 ```bash
 iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
