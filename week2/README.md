@@ -104,6 +104,8 @@ This makes SoCs ideal for **compact**, **power-efficient**, and **high-performan
    - Designed for a specific function, such as graphics processing or AI.  
    - Highly optimized for speed and efficiency.
 
+#### soc designflow
+[img alt!]{}
 ---
 
 ## **3. Introduction to VSDBabySoC**
@@ -116,6 +118,7 @@ It was created to test multiple open-source IP cores and calibrate its analog mo
 - **RVMYTH Processor:** Performs data processing and computation.  
 - **8x Phase-Locked Loop (PLL):** Produces a stable clock signal.  
 - **10-bit Digital-to-Analog Converter (DAC):** Converts digital data into analog signals for external devices.
+
 
 ---
 
@@ -150,6 +153,9 @@ A **PLL** is an electronic control system that keeps its output signal synchroni
 2. **Loop Filter:** Converts phase error into a control voltage.  
 3. **Voltage-Controlled Oscillator (VCO):** Adjusts its frequency based on the control voltage.
 
+#### blockdaigram
+[img alt!]{}
+
 **Purpose:**  
 Maintains frequency stability and ensures synchronized operation within the SoC.
 
@@ -166,7 +172,9 @@ A **DAC** transforms digital binary values (0s and 1s) into continuous analog si
 
 **Types of DACs:**
 - **Weighted Resistor DAC:** Uses resistors of different values for each bit.  
+  [img alt!]{}
 - **R-2R Ladder DAC:** Uses a repeating resistor network (R and 2R) for easier design.
+  [img alt!]{}
 
 **In BabySoC:**  
 - Uses a **10-bit DAC**, which means it converts 10-bit digital data into one precise analog output.  
