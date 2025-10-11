@@ -76,7 +76,22 @@ The following TCL script can be executed to perform STA for the available PVT co
 The timing libraries can be downloaded from:  
 [https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing](https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing)  
 
-#### the TCL file is 
+#### If the folder /OpenSTA/examples/BabySOC/STA_OUTPUT doesn’t exist yet, create it first:
+``` bash
+mkdir -p /OpenSTA/examples/BabySOC/STA_OUTPUT
+```
+#### Open a terminal and navigate to your OpenSTA examples folder:
+```bash
+cd /OpenSTA/examples/BabySOC
+```
+#### Create a new TCL file (for example):
+``bash
+nano vsdbabysoc_pvt_sta.tcl
+```
+#### Paste your entire script into it:
+
+
+##### the TCL file is 
      set list_of_lib_files(1) "sky130_fd_sc_hd__tt_025C_1v80.lib"
      set list_of_lib_files(2) "sky130_fd_sc_hd__ff_100C_1v65.lib"
      set list_of_lib_files(3) "sky130_fd_sc_hd__ff_100C_1v95.lib"
@@ -116,6 +131,8 @@ The timing libraries can be downloaded from:
      exec echo "$list_of_lib_files($i)" >> /OpenSTA/examples/BabySOC/STA_OUPUT/sta_wns.txt
      report_wns -digits {4} >> /OpenSTA/examples/BabySOC/STA_OUPUT/sta_wns.txt
      }
+Run the TCL File in OpenSTA
+
      
 | PVT_CORNER    | Worst Setup Slack    | Worst Hold Slack    | WNS    | TNS   |
 |-------------|-------------|-------------|-------------|-------------|
