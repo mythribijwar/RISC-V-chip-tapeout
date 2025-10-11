@@ -141,5 +141,5 @@ gtkwave post_synth_sim.vcd
 ---
 
 
-
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/879938656e79962006638947108050444d0868a7/week3/part1/pictures/Screenshot%20from%202025-10-10%2012-01-00.png)
 
