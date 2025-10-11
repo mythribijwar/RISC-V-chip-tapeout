@@ -85,7 +85,7 @@ mkdir -p /OpenSTA/examples/BabySOC/STA_OUTPUT
 cd /OpenSTA/examples/BabySOC
 ```
 #### Create a new TCL file (for example):
-``bash
+```bash
 nano vsdbabysoc_pvt_sta.tcl
 ```
 #### Paste your entire script into it:
@@ -132,6 +132,9 @@ nano vsdbabysoc_pvt_sta.tcl
      report_wns -digits {4} >> /OpenSTA/examples/BabySOC/STA_OUPUT/sta_wns.txt
      }
 Run the TCL File in OpenSTA
+```bash
+sudo docker run -it -v $HOME:/data opensta /OpenSTA/examples/vsdbabysoc_pvt_sta.tcl
+```
 
      
 | PVT_CORNER    | Worst Setup Slack    | Worst Hold Slack    | WNS    | TNS   |
