@@ -24,7 +24,7 @@ docker run -i -v $HOME:/data opensta
      
 ##### the OpenSTA tool is installed
 
-![WhatsApp Image 2024-12-07 at 9 37 03 AM](https://github.com/user-attachments/assets/0f73dcfd-0ca8-49e6-ac4e-e57335d79c7d)
+
 
 
 ## Static timing analysis using OpenSTA
@@ -37,8 +37,8 @@ docker run -i -v $HOME:/data opensta
        set_input_delay -clock clk 0 {in1 in2}
        report_checks
 
-![WhatsApp Image 2024-12-07 at 9 14 09 AM](https://github.com/user-attachments/assets/5c3805ca-2199-4b09-bfaa-c47d0806c5a3)
-![WhatsApp Image 2024-12-07 at 9 14 09 AM (1)](https://github.com/user-attachments/assets/51d631ae-20e7-43b3-b4bd-d1ed37d60998)
+![WhatsApp Image 2024-12-07 at 9 14 09 AM](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/09657ac96a96e4bc29b05376a240bb583c356744/week3/part3/pictures/Screenshot%20from%202025-10-11%2019-25-40.png)
+![WhatsApp Image 2024-12-07 at 9 14 09 AM (1)](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/09657ac96a96e4bc29b05376a240bb583c356744/week3/part3/pictures/Screenshot%202025-10-11%20232808.png)
 
 
 
@@ -153,10 +153,4 @@ sudo docker run -it -v $HOME:/data opensta /OpenSTA/examples/vsdbabysoc_pvt_sta.
 |  ss_n40C_1v44  |-22.7070  | 0.9909   | -22.7070  | -17801.5625  |
 |  ss_n40C_1v76     |-5.2654   | 0.5038   | -5.2654   | -3208.7793   |
 
-![Screenshot 2024-12-08 064226](https://github.com/user-attachments/assets/c2735063-c6c8-4a51-8f6a-2d17818fa2e5)
 
-![Screenshot 2024-12-08 065041](https://github.com/user-attachments/assets/769c8079-dfea-422e-8cc7-8e6240420b1b)
-
-![Screenshot 2024-12-08 065913](https://github.com/user-attachments/assets/fc904026-5a3c-4bca-8e41-1624474f4852)
-
-![Screenshot 2024-12-08 070712](https://github.com/user-attachments/assets/6daea128-878b-4286-96ab-08ea7bdd3b83)
