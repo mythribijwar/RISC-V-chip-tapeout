@@ -37,9 +37,9 @@ yosys
 
 Inside the Yosys shell, run:
 ```yosys
-read_verilog /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/vsdbabysoc.v
-read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/rvmyth.v
-read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/clk_gate.v
+read_verilog /home/mythri/VLSI/VSDBabySoC/src/module/vsdbabysoc.v
+read_verilog -I /home/mythri/VLSI/VSDBabySoC/src/include /home/mythri/VLSI/VSDBabySoC/src/module/rvmyth.v
+read_verilog -I /home/mythri/VLSI/VSDBabySoC/src/include /home/mythri/VLSI/VSDBabySoC/src/module/clk_gate.v
 ```
 
 
@@ -48,9 +48,9 @@ read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya1
 ### **Step 2: Load the Liberty Files for Synthesis**
 Inside the same Yosys shell, run:
 ```yosys
-read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/avsdpll.lib
-read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/avsddac.lib
-read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -lib /home/mythri/VLSI/VSDBabySoC/src/lib/avsdpll.lib
+read_liberty -lib /home/mythri/VLSI/VSDBabySoC/src/lib/avsddac.lib
+read_liberty -lib /home/mythri/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
 
@@ -66,7 +66,7 @@ synth -top vsdbabysoc
 
 ### **Step 4: Map D Flip-Flops to Standard Cells**
 ```yosys
-dfflibmap -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+dfflibmap -liberty /home/mythri/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
 
@@ -74,10 +74,11 @@ dfflibmap -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_h
 
 ### **Step 5: Perform Optimization and Technology Mapping**
 ```yosys
+
+
 opt
-abc -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
-
-
+abc -liberty /home/mythri/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
+```
 ---
 
 ### **Step 6: Perform Final Clean-Up and Renaming**
@@ -101,7 +102,8 @@ stat
 
 ### **Step 8: Write the Synthesized Netlist**
 ```yosys
-write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
+write_verilog -noattr /home/mythri/VLSI/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
+
 ```
 
 
@@ -113,7 +115,11 @@ write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_s
 ### **Step 1: Compile the Testbench**
 Run the following `iverilog` command to compile the testbench:
 ```bash
-iverilog -o /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM -DFUNCTIONAL -DUNIT_DELAY=#1 -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
+iverilog -o output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM \
+-I src/include -I src/module \
+src/module/testbench.v output/post_synth_sim/vsdbabysoc.synth.v
+cd output/post_synth_sim
+./post_synth_sim.out
 ```
 ---
 ### **Step 2: Navigate to the Post-Synthesis Simulation Output Directory**
