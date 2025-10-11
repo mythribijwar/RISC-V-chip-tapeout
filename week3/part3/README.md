@@ -57,8 +57,8 @@ read_sdc /OpenSTA/examples/BabySOC/vsdbabysoc_synthesis.sdc; \
 report_checks
 
      
-![WhatsApp Image 2024-12-07 at 9 14 08 AM (4)](https://github.com/user-attachments/assets/d67e5fd1-99a8-47b5-a8f4-cf6063e07bd5)
-![WhatsApp Image 2024-12-07 at 9 14 07 AM](https://github.com/user-attachments/assets/c8652c4e-392d-4881-a97e-288e81c679b2)
+![WhatsApp Image 2024-12-07 at 9 14 08 AM (4)](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/bbf8c69ce6c9332075740abeb3ca83f917b82bca/week3/part3/pictures/screnshot.jpeg)
+![WhatsApp Image 2024-12-07 at 9 14 07 AM](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/bbf8c69ce6c9332075740abeb3ca83f917b82bca/week3/part3/pictures/screenshot1.jpeg)
 
      
 ### **VSDBabySoC PVT Corner Analysis (Post-Synthesis Timing)**  
