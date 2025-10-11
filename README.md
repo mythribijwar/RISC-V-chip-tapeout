@@ -15,4 +15,8 @@ done
 ### week 2 
   #### To build a solid understanding of SoC fundamentals and practice functional modelling of the BabySoC using simulation tools (Icarus Verilog & GTKWave). 
    done
+### week3
+#### Post-Synthesis GLS & STA Fundamentals Objective To understand and perform Gate-Level Simulation (GLS) after synthesis, validate functionality, and get introduced to Static Timing Analysis (STA) concepts with practical experiments using OpenSTA. 
+ done
+
    
