@@ -119,7 +119,7 @@ In MOS devices, **Rp** (PMOS) and **Rn** (NMOS) act as **non-linear resistors**,
          .endc
          .end
 ####  The plot of Ids vs Vgs over constant Vds:
-![WhatsApp Image 2024-12-12 at 6 12 00 AM (1)](https://github.com/user-attachments/assets/7fdd6cf7-680e-4ac3-a27f-0afe30c417a8)
-![WhatsApp Image 2024-12-12 at 6 12 00 AM](https://github.com/user-attachments/assets/a6789ed4-1278-4d7e-8b7c-810556929139)
+![img alt)](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/d03be6b088fe7e31fe3555f2aa53394a984818db/week4/day2/pictures/Screenshot%20from%202025-10-18%2019-28-12.png)
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/d03be6b088fe7e31fe3555f2aa53394a984818db/week4/day2/pictures/Screenshot%20from%202025-10-18%2019-30-16.png)
 
 
