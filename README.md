@@ -19,4 +19,10 @@ done
 #### Post-Synthesis GLS & STA Fundamentals Objective To understand and perform Gate-Level Simulation (GLS) after synthesis, validate functionality, and get introduced to Static Timing Analysis (STA) concepts with practical experiments using OpenSTA. 
  done
 
-   
+   ### week 4
+   #### day 1: introduction to circuit design and spice simulations
+#### day 2: spice simulation for lower nodes and velocity saturation effect
+#### day 3: voltage transfer characteristics: spice simulations in ngspice
+#### day 4: static behavior evaluation: cmos inverter robustness and noise margin
+#### day 5: static behavior evaluation: cmos inverter robustness - power supply variation
+done 
