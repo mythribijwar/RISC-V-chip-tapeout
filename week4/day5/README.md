@@ -61,9 +61,7 @@
 ## Static behavior evaluation: CMOS inverter robustness, Power supply variation
 ### Smart SPICE simulation for power supply variations
 
-![WhatsApp Image 2024-12-14 at 5 54 28 AM (1)](https://github.com/user-attachments/assets/6e264a52-15c6-4a99-a603-692e9b51b689)
-![WhatsApp Image 2024-12-14 at 5 54 28 AM](https://github.com/user-attachments/assets/6d89ba5d-aa04-42e6-b895-c2253399447c)
-
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/47d416181fc4fb29fa60cd0eedda085420f24a2e/week4/day5/pic/Screenshot%20from%202025-10-18%2019-40-25.png)
 
 ### **CMOS Inverter Robustness: Extreme Device Width Variation**
 
@@ -80,5 +78,5 @@
    The CMOS inverter exhibits robust static behavior, tolerating extreme width variations without functional failure.
 
 ![Screenshot 2024-12-14 064110](https://github.com/user-attachments/assets/2ff1be23-c941-4053-bac2-caa191f08308)
-![WhatsApp Image 2024-12-14 at 5 54 29 AM](https://github.com/user-attachments/assets/ebc534a4-d0fc-42c4-916f-bc564a118478)
-![WhatsApp Image 2024-12-14 at 5 54 29 AM (1)](https://github.com/user-attachments/assets/eb560b25-1bbc-4e88-b2f7-d3af78af9d54)
+
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/47d416181fc4fb29fa60cd0eedda085420f24a2e/week4/day5/pic/Screenshot%20from%202025-10-18%2019-41-22.png)
