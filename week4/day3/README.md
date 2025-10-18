@@ -83,8 +83,7 @@ In the **velocity-saturated** case, the **switching threshold (Vm)** is the poin
         .endc
         .end
         
-![WhatsApp Image 2024-12-12 at 10 59 21 PM](https://github.com/user-attachments/assets/e5b60ff6-bc40-47f8-bedd-d0e1f406fae6)
-![WhatsApp Image 2024-12-12 at 10 59 21 PM (1)](https://github.com/user-attachments/assets/1d249ffe-65a4-4f87-a632-1c8114f4ff69)
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/795b19d5e9930cbb256c33e92d74401d6b785075/week4/day3/pic/Screenshot%20from%202025-10-18%2019-35-13.png)
 
 - **Switching Threshold (VM):**  
   The input voltage (**Vin**) at which the output voltage (**Vout**) equals the input voltage.  
@@ -112,7 +111,7 @@ In the **velocity-saturated** case, the **switching threshold (Vm)** is the poin
           .endc
           .end
   
-  ![WhatsApp Image 2024-12-12 at 10 59 17 PM](https://github.com/user-attachments/assets/bad784a5-848a-4190-a74f-bd70ce13cf5d)
-  ![WhatsApp Image 2024-12-12 at 10 59 18 PM](https://github.com/user-attachments/assets/7a95401c-8491-4a4d-ac4f-b3cc1dc7ebc5)
+  ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/795b19d5e9930cbb256c33e92d74401d6b785075/week4/day3/pic/Screenshot%20from%202025-10-18%2019-34-13.png)
+ 
 - **Propagation Delay:**  
   The time difference (measured at 50% of input-output transition) between the input signal change and the corresponding output signal switch in a logic gate (e.g., inverter).
