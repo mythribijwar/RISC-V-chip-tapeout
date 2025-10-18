@@ -146,9 +146,8 @@ You can download ngspice for Windows from the official source using the followin
     plot -vdd#branch
 
 ### The plot of Ids vs Vds over constant Vgs:
-![WhatsApp Image 2024-12-10 at 9 31 06 PM](https://github.com/user-attachments/assets/5b9a1024-cd61-428c-919c-af8bfdbf694d)
-![WhatsApp Image 2024-12-10 at 9 31 06 PM (2)](https://github.com/user-attachments/assets/99893245-4e92-48f1-83a1-f66699612970)
-![WhatsApp Image 2024-12-10 at 9 31 06 PM (1)](https://github.com/user-attachments/assets/718c78cf-4b07-49fd-b774-913e2e19d72f)
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/76adda00d04d4c54b4ebeccd39086d16e5f866aa/week4/day1/Pictures/Screenshot%20from%202025-10-18%2019-17-15%20(1).png)
+
 
 
 
