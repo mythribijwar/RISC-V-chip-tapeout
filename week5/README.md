@@ -18,6 +18,9 @@
 
       ./build_openroad.sh --local
 
+ error occured 
+ ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/1b49e1256fa58670a536353bf839b3ba3ad62c24/week5/pic/Screenshot%202025-10-26%20003140.png)
+ 
 
 #### **4. Verify Installation**  
 
@@ -40,3 +43,5 @@
 
 
 #### directory structure
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/1b49e1256fa58670a536353bf839b3ba3ad62c24/week5/pic/Screenshot%202025-10-26%20004410.png)
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/1b49e1256fa58670a536353bf839b3ba3ad62c24/week5/pic/Screenshot%202025-10-26%20004334.png)
