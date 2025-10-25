@@ -7,11 +7,12 @@
 
 #### **1. Clone the OpenROAD Repository**  
       git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
-      cd OpenROAD-flow-script
+      cd OpenROAD-flow-scripts
 #### **2. Run the Setup Script**  
        sudo ./setup.sh
 
-
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/b136105299dbd45b3738a1ad28a27730885d4dba/week5/pic/Screenshot%202025-10-25%20231050.png)
+![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/b136105299dbd45b3738a1ad28a27730885d4dba/week5/pic/image.png)
 
 #### **3. Build OpenROAD**  
 
