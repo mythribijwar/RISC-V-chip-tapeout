@@ -2,6 +2,8 @@
 **OpenROAD** is an open-source, fully automated RTL-to-GDSII flow for digital integrated circuit (IC) design. It supports synthesis, floorplanning, placement, clock tree synthesis, routing, and final layout generation. The tool is built to enable rapid design iterations and experimentation, making it ideal for academic and industrial use.  
 
 ---
+## reference 
+ ![cadhut](https://cadhut.com/2022/08/07/how-to-install-openroad-and-other-vlsi-tools-under-ubuntu-22-04-or-linux-mint-21/#:~:text=If%20you%27re%20not%20using,install%20it%2C%20as%20shown%20below)
 
 ### **Steps to Install OpenROAD and Run GUI**  
 
