@@ -3,7 +3,7 @@
 
 ---
 ## reference 
- ![cadhut](https://cadhut.com/2022/08/07/how-to-install-openroad-and-other-vlsi-tools-under-ubuntu-22-04-or-linux-mint-21/#:~:text=If%20you%27re%20not%20using,install%20it%2C%20as%20shown%20below)
+ https://cadhut.com/2022/08/07/how-to-install-openroad-and-other-vlsi-tools-under-ubuntu-22-04-or-linux-mint-21/#:~:text=If%20you%27re%20not%20using,install%20it%2C%20as%20shown%20below
 
 ### **Steps to Install OpenROAD and Run GUI**  
 
