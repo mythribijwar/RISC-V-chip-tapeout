@@ -17,7 +17,6 @@
 
       ./build_openroad.sh --local
 
-![WhatsApp Image 2024-12-17 at 8 48 25 AM](https://github.com/user-attachments/assets/3c6f631c-8ce1-460e-8200-ca2f9c339af3)
 
 #### **4. Verify Installation**  
 
@@ -34,7 +33,6 @@
        cd flow
        make
 
-![WhatsApp Image 2024-12-17 at 8 48 24 AM](https://github.com/user-attachments/assets/9554cf56-e6bf-44f1-8096-80c0b4c48777)
 
 ##### 3. Launch the graphical user interface (GUI) to visualize the final layout:  
       make gui_final
