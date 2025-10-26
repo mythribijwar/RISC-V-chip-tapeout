@@ -20,16 +20,24 @@
 
       ./build_openroad.sh --local
 
- error occured 
+   error occured 
+   
  ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/1b49e1256fa58670a536353bf839b3ba3ad62c24/week5/pic/Screenshot%202025-10-26%20003140.png)
- 
+
+ #### to correct error
+  use  below command to setup everything to remove error
+  
+             sudo ./etc/DependencyInstaller.sh -all
+   repeat step 3
+        
+  
 
 #### **4. Verify Installation**  
 
        source ./env.sh
        yosys -help  
        openroad -help
-
+ ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/6e4eb95acd77c56e580ce0772384057134320c4a/week5/pic/Screenshot%202025-10-26%20095908.png)
 
 
 
@@ -40,8 +48,12 @@
        make
 
 
+   ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/6e4eb95acd77c56e580ce0772384057134320c4a/week5/pic/Screenshot%202025-10-26%20100232.png)
+
 ##### 3. Launch the graphical user interface (GUI) to visualize the final layout:  
       make gui_final
+      
+   ![img alt](https://github.com/mythribijwar/RISC-V-chip-tapeout/blob/30a109862756a7cc5704f02770ad841b6eb05f96/week5/pic/Screenshot%202025-10-26%20100441.png)
 
 
 #### directory structure
